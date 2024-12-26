@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    z-index: -1;
+    border-radius: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #f5576c;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #f093fb;
+    box-shadow: 0 0 8px rgba(240, 147, 251, 0.6);
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+button {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #f5576c, #f093fb);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background: linear-gradient(135deg, #f5576c, #d4607a);
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+input::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+form:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
